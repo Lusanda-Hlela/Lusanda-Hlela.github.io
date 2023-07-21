@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/aboutus.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>About Us</title>
+</head>
+
+<body>
+  <form action="signin.html" target="self">
+    <input type="submit" value="Login">
+  </form>
+  <div class="carousel-container">
+    <h1 style="text-decoration: underline;">Meet The Team</h1>
+    <h3 style="font-family: 'Courier New';">Highly Driven & Effective Team Providing Technical Solutions</h3>
+    <i class="fa fa-arrow-left" aria-hidden="true" id="prevBtn"></i>
+    <i class="fa fa-arrow-right" aria-hidden="true" id="nextBtn"></i>
+    <div class="carousel-slide">
+      <img src="/images/aboutus/image1.png" alt="image1" id="lastClone">
+      <img src="/images/aboutus/image2.png" alt="image2">
+      <img src="/images/aboutus/image3.png" alt="image3">
+      <img src="/images/aboutus/lusanda.png" alt="lusanda">
+      <img src="/images/aboutus/image4.png" alt="image4">
+      <img src="/images/aboutus/image1.png" alt="image1">
+      <img src="/images/aboutus/image2.png" alt="image2" id="firstClone"> 
+    </div>
+    <!--Details-->
+    <div class="details">
+      <h2 id="image1">Person 1</h2>
+      <p style="color: rgb(71, 70, 70); font-weight: bold;">Web Developer</p>
+      <p>person1@email.com</p>
+      <p>(+27) xx xxx xxxx</p>
+    </div>
+
+    <div class="details">
+      <h2 id='image2'>Person 2</h2>
+      <p style="color: rgb(71, 70, 70); font-weight: bold;">Marketing Strategist</p>
+      <p>person2@email.com</p>
+      <p>(+27) xx xxx xxxx</p>
+    </div>
+
+    <div class="details">
+      <h2 id='lusanda'>Lusanda Hlela</h2>
+      <p style="color: rgb(71, 70, 70); font-weight: bold;">Software Analyst</p>
+      <p>hlelalusa@gmail.com</p>
+      <p>(+27) 63 457 0176</p>
+    </div>
+
+    <div class="details">
+      <h2 id='image3'>Person 3</h2>
+      <p style="color: rgb(71, 70, 70); font-weight: bold;">Solutions Architect</p>
+      <p>person3@email.com</p>
+      <p>(+27) xx xxx xxxx</p>
+    </div>
+
+    <div class="details">
+      <h2 id='image4'>Person 4</h2>
+      <p style="color: rgb(71, 70, 70); font-weight: bold;">UX/UI Designer</p>
+      <p>person4@email.com</p>
+      <p>(+27) xx xxx xxxx</p>
+    </div>
+  </div>
+
+  <button id="prevBtn"></button>
+  <button id="nextBtn"></button>
+  <script src="app/aboutus.js"></script>
+
+</body>
+</html>

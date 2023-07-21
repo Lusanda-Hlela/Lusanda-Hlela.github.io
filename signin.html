@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignIn</title>
+  <link rel="stylesheet" href="/style/loginform.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('a').click(function(){
+        $('.submit').hide();
+        $('.signin').hide();
+        $('.forgot').show();
+      });
+    }); 
+  </script> 
+</head>
+<body>
+  <form action="/index.html" target="_self">
+    <input type="submit" value="Learn more about us" style="color: rgb(221, 204, 204); font-weight: 200px; background-color: rgb(51, 129, 145)">
+  </form>
+  <div class = 'wrapper fadeInDown'>
+    <div id = 'formContent'>
+      <!--Tabs Titles-->
+      <h2 class = 'active'>Sign In</h2>
+      <h2 class = 'inactive'><a href="#" style="color: grey; font-weight: 200px;">Sign Up</a></h2>
+      <!--Icon-->
+      <div class = 'fadeIn first'>
+        <img src="/images/logo.png" alt="Hire Yourself Logo">
+      </div>
+
+      <!--Login Form-->
+      <form action='' class="signin">
+        <input type="text" id="login" class="fadeIn second" name="login" placeholder="johndoe@gmail.com" required>
+        <input type="password" name="password" id="word" class = 'fadeIn third' minlength="8" placeholder="password" pattern="(?=.\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        <span class="show-btn"><i class="fas fa-eye"></i></span>
+      </form>
+
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id='letter' class='invalid'>A <b>lowercase</b> letter</p>
+        <p id='capital' class='invalid'>A <b>capital (uppercase)</b> letter</p>
+        <p id='number' class='invalid'>A <b>number</b></p>
+        <p id='length' class='invalid'>Minimum <b>8 characters</b></p>
+      </div>
+
+      <!-- Script-->
+      <script src="/app/password.js"></script>
+      
+      <!--Submit Form-->
+      <form action="#" target="self" class="submit">
+        <input type="submit">
+      </form>
+      <div id='formFooter'>
+        <a class='underlineHover' href="#">Forgot Password?</a>
+        <p class="forgot">Reset Your Password<br>
+        Send Verification Code Via:</p>
+        <form action="" class="forgot">
+          <input type="radio" id="email" name="method">
+          <label for="email">Email Address</label><br>
+          <input type="radio" id="phonenumber" name="method">
+          <label for="phonenumber">Phone Number</label>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

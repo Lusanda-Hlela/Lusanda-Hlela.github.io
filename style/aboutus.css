@@ -1,0 +1,75 @@
+/* Styling a slideImage */
+
+html {
+  background-color: #60a3c2;
+}
+
+
+* {
+  margin: 0px; 
+  padding: 0px;
+  box-sizing: border-box; 
+}
+
+/* margin property value auto horizontally centers its div items within it, the elements then take up the specified width and the remaining space will be split equally btn left and right margins*/
+.carousel-container {
+  width: 405px;
+  margin: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 4px 0 rgba(82, 51, 51, 0.2);
+  border-radius: 10px 10px 10px 10px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: rgb(5, 25, 29);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: rgb(5, 25, 29);;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.details {
+  display: none;
+  padding: 8px;
+  line-height: 25px;
+}
+input[type=submit] {
+  background-color: rgb(51, 129, 145);
+  border: none;
+  color: rgb(221, 204, 204);
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  transition: all 0.3s ease-in-out;
+}
